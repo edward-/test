@@ -1,6 +1,10 @@
 # Pruebas para IPCOM
-
+```
 Wrandow Zachary Ramirez Igarza 
+
+Email: wzr_developer@outlook.com
+
+```
 
 
 ## Comenzando 🚀
