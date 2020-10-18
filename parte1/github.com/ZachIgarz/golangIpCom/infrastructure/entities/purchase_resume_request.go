@@ -19,7 +19,6 @@ func (purchase *PurchaseResumeRequest) RealDate() string {
 	return purchase.realDate
 }
 
-
 func (purchase *PurchaseResumeRequest) Days() string {
 	return purchase.days
 }

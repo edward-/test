@@ -1,8 +1,6 @@
 package application
 
 import (
-	"fmt"
-
 	domainEntities "github.com/ZachIgarz/golangIpCom/domain/entities"
 	"github.com/ZachIgarz/golangIpCom/domain/ports"
 	"github.com/ZachIgarz/golangIpCom/infrastructure/entities"
@@ -36,8 +34,11 @@ func (purchasesApplication *PurchasesApplication) Handler(purchaseResumeRequest 
 
 		return statistics, err
 	}
-	fmt.Println(purchaseList)
-	//obtainStatistics(&statistics, purchaseList)
+
+	statistics.ComprasPorTDC = make(map[string]float64)
+	for _, purchase := range purchaseList {
+		obtainStatistics(&statistics, purchase)
+	}
 
 	return statistics, error
 }

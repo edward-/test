@@ -3,7 +3,6 @@ package restclients
 import (
 	"bytes"
 	"encoding/json"
-	"fmt"
 	"io/ioutil"
 	"net/http"
 	"strconv"
@@ -39,7 +38,6 @@ func (purchaseRestClient PurchaseRestClient) Get(purchaseResumeRequest entities.
 			realDate := dateNext.String()[0:10]
 
 			purchaseRestClientURL = (purchaseURL) + (realDate)
-			fmt.Println(purchaseRestClientURL)
 			response, err := http.Get(purchaseRestClientURL)
 			if err != nil {
 
@@ -65,12 +63,9 @@ func (purchaseRestClient PurchaseRestClient) Get(purchaseResumeRequest entities.
 
 	respuesta, _ := ioutil.ReadAll(response.Body)
 
-	_ = json.Unmarshal([]byte(respuesta), purchase)
+	dec := json.NewDecoder(bytes.NewReader(respuesta))
+	dec.Decode(&purchase)
 
-	/*
-		dec := json.NewDecoder(bytes.NewReader(respuesta))
-		dec.Decode(&purchase)
-	*/
 	purchaseList = append(purchaseList, purchase)
 
 	//DEFER
