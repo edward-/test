@@ -19,10 +19,13 @@ func (purchaseRestClient PurchaseRestClient) Get(purchaseResumeRequest entities.
 	purchaseRestClientURL := (purchaseURL) + (purchaseResumeRequest.RealDate())
 
 	response, err := http.Get(purchaseRestClientURL)
+
 	var respuesta []byte
 	if err != nil {
+
 		return respuesta, err
 	}
+
 	//DEFER
 	defer response.Body.Close()
 
