@@ -3,6 +3,7 @@ package application
 import (
 	"bytes"
 	"encoding/json"
+
 	domainEntities "github.com/ZachIgarz/golangIpCom/domain/entities"
 	"github.com/ZachIgarz/golangIpCom/domain/ports"
 	"github.com/ZachIgarz/golangIpCom/infrastructure/entities"
