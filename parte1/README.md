@@ -6,7 +6,7 @@ Api para consultar estadisticas de la ventas de una fecha o un rango de fechas
 ### Puede ejecutar el codigo : 📋
 
 ```
-node index.js
+go run main.go
 ```
 
 ### ENDPOINT  ⚙️ : 📋
