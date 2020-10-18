@@ -11,7 +11,13 @@ _La parte1 es una api contruida en golang para el optener la estadisticas de ven
 
 ### Pre-requisitos 📋
 
-
 ```
 GOLANG Y NODEJS INSTALADOS ANTERIORMENTE
+```
+
+
+### Puede Clonar este repositorio usando: 📋
+
+```
+git clone https://github.com/ZachIgarz/test.git
 ```
