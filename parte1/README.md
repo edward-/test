@@ -3,6 +3,8 @@
 Golang 
 Api para consultar estadisticas de la ventas de una fecha o un rango de fechas
 
+Este Proyecto esta estructurado bajo, DDD , o Estructura Hexagonal.
+
 ### Puede ejecutar el codigo : 📋
 
 ```
