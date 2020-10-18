@@ -11,7 +11,7 @@ Se realiza una funcion que devuelve , [Dia de mejor venta, dia de mejor compra ]
 
 
 
-### Puede ejecutar el codigo usando: 📋
+### Puede ejecutar el codigo usando dentro de la carpeta parte2: 📋
 
 ```
 node index.js
